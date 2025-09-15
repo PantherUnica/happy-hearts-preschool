@@ -9,8 +9,8 @@ const HeroSection = () => {
             <div className="flex justify-center lg:justify-start">
               <img 
                 src={happyHeartsLogo} 
-                alt="Happy Hearts Preschool"
-                className="w-64 h-64 object-contain"
+                alt="Happy Hearts Preschool & Daycare"
+                className="w-80 h-auto object-contain drop-shadow-lg"
               />
             </div>
           </div>
@@ -19,7 +19,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
                 <span className="text-primary">Pre-eminent Montessori</span>{" "}
-                inspired center for early learners
+                <span className="text-secondary">inspired center</span> for early learners
               </h1>
             </div>
           </div>

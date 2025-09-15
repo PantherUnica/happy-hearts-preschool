@@ -8,43 +8,44 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Preschool warm palette */
-    --background: 48 100% 97%; /* Cream #FFF8E7 */
-    --foreground: 0 0% 29%; /* Warm Gray #4A4A4A */
+    /* Happy Hearts vibrant palette inspired by logo */
+    --background: 0 0% 100%; /* Pure White */
+    --foreground: 0 0% 20%; /* Dark Gray */
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 29%;
+    --card-foreground: 0 0% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 29%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 10 73% 62%; /* Terracotta #E96D5A */
+    --primary: 18 100% 60%; /* Vibrant Orange from logo */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 32 100% 92%; /* Peach #FFE6D5 */
-    --secondary-foreground: 0 0% 29%;
+    --secondary: 201 100% 55%; /* Bright Blue from logo */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 36 100% 87%; /* Apricot #FFDDBB */
-    --muted-foreground: 0 0% 45%;
+    --muted: 48 100% 80%; /* Soft Yellow */
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 82 25% 85%; /* Soft Sage #DDE7D1 */
-    --accent-foreground: 0 0% 29%;
+    --accent: 201 100% 90%; /* Light Blue */
+    --accent-foreground: 0 0% 20%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 36 100% 90%;
-    --input: 36 100% 90%;
-    --ring: 10 73% 62%;
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 18 100% 60%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
     
-    /* Custom preschool tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(48 100% 97%), hsl(32 100% 92%));
-    --warm-gradient: linear-gradient(180deg, hsl(32 100% 92%), hsl(36 100% 87%));
-    --sage-gradient: linear-gradient(135deg, hsl(82 25% 85%), hsl(82 25% 90%));
-    --shadow-warm: 0 8px 32px -8px hsl(10 73% 62% / 0.15);
-    --shadow-soft: 0 4px 16px -4px hsl(0 0% 0% / 0.1);
+    /* Happy Hearts custom tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(0 0% 100%), hsl(201 100% 95%));
+    --orange-gradient: linear-gradient(135deg, hsl(18 100% 60%), hsl(25 100% 65%));
+    --blue-gradient: linear-gradient(135deg, hsl(201 100% 55%), hsl(208 100% 60%));
+    --playful-gradient: linear-gradient(45deg, hsl(48 100% 75%), hsl(18 100% 70%), hsl(201 100% 70%));
+    --shadow-vibrant: 0 8px 32px -8px hsl(18 100% 60% / 0.2);
+    --shadow-soft: 0 4px 16px -4px hsl(0 0% 0% / 0.08);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -118,16 +119,20 @@ All colors MUST be HSL.
     background: var(--hero-gradient);
   }
   
-  .gradient-warm {
-    background: var(--warm-gradient);
+  .gradient-orange {
+    background: var(--orange-gradient);
   }
   
-  .gradient-sage {
-    background: var(--sage-gradient);
+  .gradient-blue {
+    background: var(--blue-gradient);
   }
   
-  .shadow-warm {
-    box-shadow: var(--shadow-warm);
+  .gradient-playful {
+    background: var(--playful-gradient);
+  }
+  
+  .shadow-vibrant {
+    box-shadow: var(--shadow-vibrant);
   }
   
   .shadow-soft {
